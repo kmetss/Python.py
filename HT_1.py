@@ -29,30 +29,25 @@ sum = (n * (n + 1)) / 2
 print('Сума перших натуральних чисел числа N дорівнює:' , sum)
 
 '''
-  4. Write a script to concatenate N strings.
+4. Write a script to concatenate N strings.
 '''
 
-hello = 'Hello'
-world = 'World'
-    # 1 приклад
-print(hello + ' ' + world)
-    # 2 приклад
-print(' '.join([hello, world]))
-    # 3 приклад
-print('%s %s' % (hello, world))
-    # 4 приклад
-print('{} {}'.format(hello, world))
-    # 5 приклад
-print(f'{hello} {world}')
+tapefirst = input ("Введіть текст для першого рядка")
+tapesecond = input ("Введіть текст для другого рядка")
+tapethird = input ("Введіть текст для третього рядка")
+generaltape = (tapefirst + tapesecond + tapethird)
+print(generaltape)
 
 '''
-  5. Write a script to convert decimal to hexadecimal
+5. Write a script to convert decimal to hexadecimal
 '''
 
-a = 30
-b = 4
-print(format(a, '02x'))
-print(format(b, '02x'))
+n = int(input())
+b = ''
+while n>0:
+    b = str(n % 2) + b
+    n = n // 2
+print(b)
 
 '''
   6. Write a script to check whether a specified value is contained in a group of values.
