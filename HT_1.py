@@ -42,12 +42,8 @@ print(generaltape)
 5. Write a script to convert decimal to hexadecimal
 '''
 
-n = int(input())
-b = ''
-while n>0:
-    b = str(n % 2) + b
-    n = n // 2
-print(b)
+a = int(input())
+print(hex(a))
 
 '''
   6. Write a script to check whether a specified value is contained in a group of values.
