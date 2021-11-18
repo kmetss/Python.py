@@ -2,8 +2,8 @@
 4. Write a script to concatenate N strings.
 '''
 
-tapefirst = input ("Введіть текст для першого рядка")
-tapesecond = input ("Введіть текст для другого рядка")
-tapethird = input ("Введіть текст для третього рядка")
-generaltape = (tapefirst + tapesecond + tapethird)
-print(generaltape)
+N = int(input())
+string = []
+for i in range(N):
+    string.append(input())
+print(" ".join(string))
