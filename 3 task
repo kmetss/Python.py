@@ -1,7 +1,0 @@
-'''
-3. Write a script to sum of the first n positive integers.
-'''
-
-n = int(input("Введіть число N: "))
-sum = (n * (n + 1)) / 2
-print('Сума перших натуральних чисел числа N дорівнює:' , sum)
