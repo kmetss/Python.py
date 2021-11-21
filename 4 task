@@ -1,9 +1,0 @@
-'''
-4. Write a script to concatenate N strings.
-'''
-
-N = int(input())
-string = []
-for i in range(N):
-    string.append(input())
-print("".join(string))
