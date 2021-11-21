@@ -1,6 +1,0 @@
-'''
-5. Write a script to convert decimal to hexadecimal
-'''
-
-a = int(input())
-print(hex(a))
