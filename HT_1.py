@@ -36,7 +36,7 @@ N = int(input())
 string = []
 for i in range(N):
     string.append(input())
-print(" ".join(string))
+print("".join(string))
 
 '''
 5. Write a script to convert decimal to hexadecimal
