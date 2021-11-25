@@ -1,0 +1,19 @@
+'''
+4. Створiть 3 рiзних функцiї (на ваш вибiр). Кожна з цих функцiй повинна повертати якийсь результат. 
+Також створiть четверу ф-цiю, яка в тiлi викликає 3 попереднi, обробляє повернутий ними результат та також повертає результат. 
+Таким чином ми будемо викликати 1 функцiю, а вона в своєму тiлi ще 3
+'''
+
+def the_first(N=1):
+    return N * 5
+def the_second(N=2):
+    return N + 5
+def the_third(N=3):
+    return N - 1
+def the_fourth():
+    the_first_three = the_first(), the_second(), the_third()
+    results = []
+    for i in the_first_three:
+        results.append(i)
+    return results
+print(the_fourth())
