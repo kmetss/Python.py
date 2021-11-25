@@ -3,13 +3,13 @@
 '''
 
 N = input ('Для відображення пори року введіть порядковий номер місяця від 1 до 12: ')
-if N == 1 or 2 or 12:
+if N == 1 or N == 2 or N == 12:
     print ('Зима')
-elif N == 3 or 4 or 5:
+elif N == 3 or N == 4 or N == 5:
     print ('Весна')
-elif N == 6 or 7 or 8:
+elif N == 6 or N == 7 or N == 8:
     print ('Літо')
-elif N == 9 or 10 or 11:
+elif N == 9 or N == 10 or N == 11:
     print ('Осінь')
 else:
-    print ('Помилка')
+    print ('Error')
