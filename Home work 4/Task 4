@@ -1,0 +1,17 @@
+'''
+4. Написати функцію < prime_list >, яка прийматиме 2 аргументи - початок і кінець діапазона, і вертатиме список простих чисел всередині цього діапазона.
+'''
+
+def is_prime(num):
+    if i == 1: return False
+    for p in range(2,int(num**0.5)+1):
+        if num % p == 0:
+            return False
+    return True
+N1 = int(input('Введіть початок діапазону простих чисел: '))
+N2 = int(input('Введіте кінець діапазону простих чисел: '))
+num1 = min(N1, N2)
+num2 = max(N1, N2)
+for i in range(num1, num2+1):
+    if is_prime(i):
+        print(i,' ',end = '')
