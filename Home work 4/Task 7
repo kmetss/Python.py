@@ -1,0 +1,13 @@
+'''
+7. Написати функцію, яка приймає на вхід список і підраховує кількість однакових елементів у ньому.
+'''
+
+import collections
+
+txt = (input())
+d = collections.defaultdict(int)
+for i in txt:
+    d[i] += 1
+for i in sorted(d, key=d.get, reverse=True):
+  if d[i] > 1:
+      print('%s %d' % (i, d[i]))
