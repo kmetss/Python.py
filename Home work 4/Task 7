@@ -2,13 +2,14 @@
 7. Написати функцію, яка приймає на вхід список і підраховує кількість однакових елементів у ньому.
 '''
 
-import collections
-
 def count(n):
-    a = collections.defaultdict(int)
+    k = {}
     for i in n:
-        a[i] += 1
-    for i in sorted(a, key=a.get, reverse=True):
-        if a[i] > 1:
-            print('%s %a' % (i, a[i]))
-count(input())
+        if i in k:
+            k[i] += 1
+        else:
+            k[i]=1
+    return k
+print('Введіть ваш список:')
+o = (input())
+print(count(o))
