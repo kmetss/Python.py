@@ -6,16 +6,14 @@
 Функція повинна принтануть і вернуть суму, яка буде на рахунку.
 '''
 
-def bank():
-    print("Ваш вклад: ")
-    a = int(input())
-    print("На скільки років буде вклад: ")
-    years = int(input())
-    print("Відсотки: ")
-    p = int(input())
-    i=0
-    while i<years:
-        a=a+a*(p/100)
-        i=i+1
-    return a
-print('Сума на вашому рахунку: ', bank())
+def bank(a, y, p):
+    for year in range(y):
+        a = a+a*(p/100) 
+    return "%.2f" % a
+a=int(input('Введіть суму вкладу: '))
+y=int(input('На скільки років буде вклад: '))
+try:
+    p=int(input('Введіть відсоток: '))
+except ValueError:
+    p = 10
+print(bank(a, y, p))
