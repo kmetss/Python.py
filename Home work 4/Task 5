@@ -2,9 +2,11 @@
 5. Написати функцію < fibonacci >, яка приймає один аргумент і виводить всі числа Фібоначчі, що не перевищують його.
 '''
 
-fib = fib1 = 1
+def fibonacci(n):
+    a, b = 1, 1
+    for i in range(n):
+        yield a
+        a, b = b, a + b
 n = int(input())
-print(fib, fib1, end=' ')
-for i in range(2, n):
-    fib, fib1 = fib1, fib + fib1
-    print(fib1, end=' ')
+data = list(fibonacci(n))
+print(data)
