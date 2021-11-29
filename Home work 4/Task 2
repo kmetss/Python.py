@@ -11,9 +11,11 @@ def bank():
     a = int(input())
     print("На скільки років буде вклад: ")
     years = int(input())
+    print("Відсотки: ")
+    p = int(input())
     i=0
     while i<years:
-        a=a+a*0.1
+        a=a+a*(p/100)
         i=i+1
     return a
 print('Сума на вашому рахунку: ', bank())
